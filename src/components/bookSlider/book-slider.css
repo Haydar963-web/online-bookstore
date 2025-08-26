@@ -1,0 +1,110 @@
+.book-slider-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 60px;
+  /* background-color: white; */
+  background-color: rgb(82, 117, 117);
+  padding: 10px 20px 20px 20px;
+}
+
+.book-slider-arrow-left,
+.book-slider-arrow-right {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 32px;
+}
+.book-slider-arrow-left:hover,
+.book-slider-arrow-right:hover {
+  font-weight: 600;
+  text-shadow: 3px 3px 15px aqua;
+  transform: scale(1.2);
+  box-shadow: 2px 2px 30px 4px aqua;
+}
+
+.book-slider-arrow-left {
+  left: 10px;
+}
+.book-slider-arrow-right {
+  right: 10px;
+}
+
+.book-slider-wrapper {
+  height: 100%;
+  display: flex;
+}
+.book-slide-item {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: snow;
+  margin: 0 20px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.book-slide-item:hover {
+  box-shadow: 2px 2px 30px 8px aqua;
+}
+.book-slide-item:hover .book-slide-item-img {
+  transform: translateX(10px);
+}
+.book-slide-item-img {
+  width: 60%;
+  object-fit: contain;
+}
+.book-slide-item-title {
+  font-size: 18px;
+}
+.book-slide-item-price {
+  color: crimson;
+  font-weight: bold;
+  font-size: 21px;
+}
+.book-slider-icons-wrapper {
+  border-top: 1px solid gray;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+.book-slider-icons-wrapper i {
+  font-size: 27px;
+  cursor: pointer;
+  margin: 0 5px;
+  color: rgb(67, 67, 67);
+}
+/* Rating */
+.rating {
+  color: orange;
+}
+.rating i {
+  margin: 0 3px;
+  font-size: 21px;
+}
+.rating span:first-of-type {
+  font-weight: 500;
+  margin: 0 12px;
+}
+.rating span:last-of-type {
+  color: gray;
+  font-size: 15px;
+  font-weight: 600;
+}

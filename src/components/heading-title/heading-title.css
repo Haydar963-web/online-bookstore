@@ -1,0 +1,21 @@
+.heading-style-for-div {
+  width: fit-content;
+  padding: 10px 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.heading-style-for-div:hover .heading-style-for-h2 {
+  font-weight: 500;
+  color: rgb(0, 255, 255);
+  text-shadow: 3px 3px 12px aqua;
+  transform: scale(1.2);
+  border-bottom: none;
+}
+.heading-style-for-h2 {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 2px solid royalblue;
+  width: fit-content;
+  padding-bottom: 5px;
+}
