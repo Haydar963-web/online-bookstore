@@ -12,6 +12,9 @@
   padding: 10px 20px;
   font-size: 21px;
 }
+.authors-search-wrapper:hover input {
+  box-shadow: 2px 2px 30px 4px aqua;
+}
 .authors-wrapper {
   display: flex;
   justify-content: space-around;
@@ -28,12 +31,29 @@
   border-radius: 7px;
   background-color: white;
   text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.author:hover {
+  box-shadow: 2px 2px 30px 4px aqua;
+  transform: scale(1.1);
 }
 .author-img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 7px;
+  overflow: hidden;
+}
+.author:hover .author-img {
+  transform: scale(1.03);
+  width: 75%;
+  height: 275px;
+  filter: brightness(0.5);
 }
 .author-name {
+  z-index: 2;
+}
+.author:hover .author-name {
+  color: aqua;
 }

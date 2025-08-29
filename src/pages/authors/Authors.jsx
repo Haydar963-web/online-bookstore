@@ -15,13 +15,18 @@ const Authors = () => {
         />
       </div>
       <div className="authors-wrapper">
-        {authors.filter(a => a.name.toLowerCase().includes(search))
-        .map((author) => (
-          <div className="author" key={author.id}>
-            <img src={author.image} alt={author.name} className="author-img" />
-            <h2 className="author-name">{author.name}</h2>
-          </div>
-        ))}
+        {authors
+          .filter((a) => a.name.toLowerCase().includes(search))
+          .map((author) => (
+            <div className="author" key={author.id}>
+              <img
+                src={author.image}
+                alt={author.name}
+                className="author-img"
+              />
+              <h2 className="author-name">{author.name}</h2>
+            </div>
+          ))}
       </div>
     </section>
   );
