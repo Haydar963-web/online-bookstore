@@ -64,6 +64,12 @@
 .book-slide-item:hover {
   box-shadow: 2px 2px 30px 8px aqua;
 }
+.book-slide-item:hover .book-slider-icons-wrapper i {
+  font-size: 30px;
+  background: linear-gradient(to top right, #ccc 80%, transparent 100%);
+  box-shadow: 3px 3px 20px 3px crimson;
+  border-radius: 50px;
+}
 .book-slide-item:hover .book-slide-item-img {
   transform: translateX(10px);
 }
@@ -90,6 +96,7 @@
   cursor: pointer;
   margin: 0 5px;
   color: rgb(67, 67, 67);
+  cursor: pointer;
 }
 /* Rating */
 .rating {
